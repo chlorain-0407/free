@@ -1,4 +1,5 @@
 import { CATEGORIES, PROMPTS, filterPrompts } from './data/prompts.js';
+import { initializeMembership } from './platform.js';
 
 const search = document.querySelector('#search');
 const categories = document.querySelector('#categories');
@@ -129,3 +130,4 @@ document.querySelector('#reset-filters').addEventListener('click', () => {
   search.focus();
 });
 renderResults();
+void initializeMembership({ status: document.querySelector('#account-status'), notice: document.querySelector('#platform-notice') });

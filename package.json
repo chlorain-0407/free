@@ -3,12 +3,18 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "node server.mjs",
     "start": "node server.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node server.mjs --preview",
     "test": "node --test"
+  },
+  "dependencies": {
+    "@agentgo-tw/app-sdk": "^2.7.0",
+    "express": "^5.3.0"
   }
 }
