@@ -1,0 +1,6 @@
+{
+  "name": "房仲 AI 提示詞工作站",
+  "description": "專為台灣不動產仲介打造的對話式 AI 提示詞引導與實戰話術百寶箱，涵蓋開發委託、帶看抗性、物件行銷、議價斡旋與稅務法規白話解說。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
