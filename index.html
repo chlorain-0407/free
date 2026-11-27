@@ -2,23 +2,69 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>房仲 AI 提示詞工作站｜台灣不動產仲介實戰話術與文案助手</title>
-    <meta name="description" content="專為台灣不動產仲介打造的對話式 AI 提示詞引導與實戰話術百寶箱，涵蓋開發委託、帶看抗性、物件行銷、議價斡旋與稅務法規白話解說。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#173a45" />
+    <title>房仲 AI 提示詞工作站｜常用提示詞，複製就能用</title>
+    <meta name="description" content="台灣房仲常用提示詞，涵蓋開發委託、帶看跟進、物件行銷、議價斡旋、稅務法規與圖片視覺。複製後貼到你的對話式 AI，自由調整。" />
     <meta property="og:title" content="房仲 AI 提示詞工作站" />
-    <meta property="og:description" content="專為台灣不動產仲介打造的對話式 AI 提示詞引導與實戰話術百寶箱，涵蓋開發委託、帶看抗性、物件行銷、議價斡旋與稅務法規白話解說。" />
+    <meta property="og:description" content="挑選情境、複製提示詞，貼到你慣用的 AI 繼續聊。" />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23173a45'/%3E%3Cpath d='M16 30 32 16 48 30v19H36V36h-8v13H16Z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/index.css" />
+    <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="bg-[#F8FAFC] text-slate-900 antialiased selection:bg-[#1E3A5F]/15 selection:text-[#1E3A5F]">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <a class="skip-link" href="#prompt-library">跳到提示詞清單</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="房仲 AI 提示詞工作站首頁">
+          <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-8H9v8H4a1 1 0 0 1-1-1Z"/></svg></span>
+          <span>房仲 AI <strong>提示詞工作站</strong></span>
+        </a>
+        <a class="header-link" href="#how-to">怎麼使用</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">給台灣房仲的日常工作靈感</p>
+          <h1 id="hero-title">常用提示詞，<br /><span>複製就能開始。</span></h1>
+          <p class="hero-description">開發、帶看、行銷到圖片靈感，挑一段用得上的提示詞。<br class="desktop-break" />貼到你慣用的 AI，再聊成適合自己的版本。</p>
+          <div class="ai-links" aria-label="開啟對話式 AI">
+            <span>搭配使用</span>
+            <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="開啟 ChatGPT（新分頁）">ChatGPT</a>
+            <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Gemini（新分頁）">Gemini</a>
+            <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" aria-label="開啟 Claude（新分頁）">Claude</a>
+          </div>
+        </div>
+        <aside class="how-to" id="how-to" aria-labelledby="how-to-title">
+          <p class="how-to-kicker">不用設定，直接開始</p>
+          <h2 id="how-to-title">把提示詞帶去 AI 聊聊</h2>
+          <ol>
+            <li><span>挑選情境</span><p>找到這次工作需要的提示詞。</p></li>
+            <li><span>複製並貼上</span><p>貼到 ChatGPT、Gemini 或其他 AI。</p></li>
+            <li><span>補上資料，自由調整</span><p>替換 [方括號]，接著請 AI 改語氣、縮字數。</p></li>
+          </ol>
+          <p class="how-to-note">圖片類也提供提示詞，複製到支援圖片的 AI 使用。</p>
+        </aside>
+      </section>
+      <section class="library" id="prompt-library" aria-labelledby="library-title">
+        <div class="library-heading">
+          <div><p class="eyebrow">PROMPT COLLECTION</p><h2 id="library-title">今天想完成什麼？</h2></div>
+          <div class="search-wrap">
+            <label class="sr-only" for="search">搜尋提示詞</label>
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg>
+            <input id="search" type="search" placeholder="搜尋情境，例如：帶看、FB、裝潢" autocomplete="off" />
+          </div>
+        </div>
+        <div id="categories" class="categories" role="group" aria-label="提示詞分類"></div>
+        <div class="results-line"><p id="result-count" role="status" aria-live="polite"></p><p>保留 [方括號]，到 AI 對話中再填資料即可</p></div>
+        <div id="prompts" class="prompt-grid"></div>
+        <div id="empty-state" class="empty-state" hidden><h3>沒有找到符合的提示詞</h3><p>試試其他關鍵字，或回到全部分類看看。</p><button id="reset-filters" class="primary-button" type="button">顯示全部提示詞</button></div>
+        <noscript><p>請開啟瀏覽器的 JavaScript，以瀏覽及複製提示詞。</p></noscript>
+      </section>
+    </main>
+    <footer><div><strong>房仲 AI 提示詞工作站</strong><p>讓 AI 協助起草，讓專業決定內容。</p></div><p>使用前請確認物件事實與客戶授權；稅務、法規與貸款資訊請查核最新官方來源。</p></footer>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   </body>
 </html>
-
